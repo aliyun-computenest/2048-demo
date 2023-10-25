@@ -10,7 +10,7 @@ Service:
     TemplateConfigs:
       - Name: 单机版
         Url: 'templates/template.yaml'
-        TrialType: Trial
+#        TrialType: Trial
         AllowedRegions:
           - cn-beijing
           - cn-hangzhou
@@ -19,10 +19,11 @@ Service:
   ServiceInfo:
     Locale: zh-CN
     ShortDescription: 2048 demo
-    Image: 'icons/service_logo.png'
+    Image: 'icons/service-logo.png'
     Name: 2048
   ShareType: Public
   ApprovalType: Manual
+#  TrialDuration: 7
 Artifact:
   Artifact_1:
     ArtifactType: File
