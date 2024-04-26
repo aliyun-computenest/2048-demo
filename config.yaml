@@ -1,5 +1,5 @@
 Service:
-  RegionId: cn-hangzhou
+  RegionId: ap-southeast-1
   DeployType: ros
   DeployMetadata:
     SupplierDeployMetadata:
@@ -10,11 +10,8 @@ Service:
     TemplateConfigs:
       - Name: 单机版
         Url: 'templates/template.yaml'
-#        TrialType: Trial
         AllowedRegions:
-          - cn-beijing
-          - cn-hangzhou
-          - cn-shanghai
+          - ap-southeast-1
   ServiceType: private
   ServiceInfo:
     Locale: zh-CN
@@ -23,12 +20,11 @@ Service:
     Name: 2048
   ShareType: Public
   ApprovalType: Manual
-#  TrialDuration: 7
 Artifact:
   Artifact_1:
     ArtifactType: File
     ArtifactName: 2048
     Description: 2048
     ArtifactProperty:
-      RegionId: cn-hangzhou
+      RegionId: ap-southeast-1
       Url: 'artifacts/2048.tgz'
