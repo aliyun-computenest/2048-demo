@@ -9,8 +9,7 @@ Service:
           ArtifactVersion: ${Artifact.Artifact_1.ArtifactVersion}
     TemplateConfigs:
       - Name: 单机版
-        Url: 'templates/template.yaml'
-#        TrialType: Trial
+        Url: 'ros_templates/template.yaml'
         AllowedRegions:
           - cn-beijing
           - cn-hangzhou
@@ -19,11 +18,10 @@ Service:
   ServiceInfo:
     Locale: zh-CN
     ShortDescription: 2048 demo
-    Image: 'icons/service-logo.png'
+    Image: 'resources/icons/service_logo.png'
     Name: 2048
   ShareType: Public
   ApprovalType: Manual
-#  TrialDuration: 7
 Artifact:
   Artifact_1:
     ArtifactType: File
@@ -31,4 +29,4 @@ Artifact:
     Description: 2048
     ArtifactProperty:
       RegionId: cn-hangzhou
-      Url: 'artifacts/2048.tgz'
+      Url: 'resources/artifact_resources/file/2048.tgz'
